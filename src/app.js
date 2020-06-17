@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
 
 // Server
 const server = app.listen(3000, 'localhost', () => {
-  const host = server.address().address
-  const port = server.address().port
+  let host = server.address().address
+  let port = server.address().port
   console.log(`Servidor iniciado em http://${host}:${port}`)
 })
